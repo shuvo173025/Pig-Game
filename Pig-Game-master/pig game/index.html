@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        
+        <title>Pig Game</title>
+    </head
+    <body>   
+       <style>
+            input[id=Wining-score]{
+                width: 30%;
+                border: 2px solid black;
+                border-radius: 4px;
+                margin: 8pz 0;
+                outline: none;
+                padding: 8px;
+                box-sizing: border-box;
+                transition: .3s;
+            }
+            button[ id=button]{
+                width: 5%;
+                height: 5%;
+                border: 2px solid black;
+                 border-radius: 4px;
+                margin: 8pz 0;
+                outline: none;
+                padding: 8px;
+                box-sizing: border-box;
+                transition: .3s;
+                right: 350px;
+                left: 376px;
+                background: white;
+                font: center;  
+            }
+            button[ id=button1]{
+                
+                 width: 5%;
+                height: 5%;
+                border: 2px solid black;
+                 border-radius: 4px;
+                margin: 8pz 0;
+                outline: none;
+                padding: 8px;
+                box-sizing: border-box;
+                transition: .3s;
+                right: 350px;
+                top: 5px;
+                background: white;
+                font: center;  
+            }
+            input[id=Wining-score]::after{
+                border-color: dodgerblue;
+                box-shadow: 0 0 8px 0 dodgerblue;
+            }
+        </style>
+        <input id="Wining-score" placeholder="Set Your Wining Score">
+        <button class="btn-click" id="button" >Ok</button>
+         <button class="btn-rule" id="button1" >Rule</button>
+       
+        <div class="wrapper clearfix">
+            <div class="player-0-panel active">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </div>
+            
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+            
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            
+            <img src="dice-4.png" alt="Dice" class="dice">
+            <img src="dice-5.png" alt="Dice" class="DDice">
+        </div>
+        
+        <script src="app1.js"></script>
+    </body>
+</html>
